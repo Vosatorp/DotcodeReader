@@ -148,7 +148,6 @@ def convertConvexHullToQuad(convexHull):
     convexHull = list(convexHull)
 
     while len(convexHull) > 4:
-        print('kek')
         del_i = 0
         del_area = float('inf')
 
