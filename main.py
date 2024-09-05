@@ -185,7 +185,7 @@ def convertConvexHullToQuad(convexHull):
 
 
 def cluster(values):
-    cluster = DBSCAN(eps=0.01, min_samples=1).fit(np.float32(values).reshape(-1, 1))
+    cluster = DBSCAN(eps=0.005, min_samples=1).fit(np.float32(values).reshape(-1, 1))
     cnt = len(set(cluster.labels_))
 
     return cnt
